@@ -2480,6 +2480,7 @@ async function whenAppViewReady(
   uri: string,
   fn: (
     res: app.bsky.unspecced.getPostThreadV2.$OutputBody | undefined,
+    err: unknown,
   ) => boolean,
 ) {
   await until(
